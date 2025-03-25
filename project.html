@@ -13,6 +13,26 @@
             --text-color: #f4f4f4;
             --bg-color: #000;
         }
+         .projects-title {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .projects-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--primary-color);
+        }
 
         * {
             box-sizing: border-box;
@@ -172,7 +192,7 @@
             <a href="#contact">Contact</a>
         </div>
     </nav>
-
+<h2 class="projects-title">Projects</h2>
     <div class="projects-container">
         <!-- Project 1 -->
         <div class="project-card">
